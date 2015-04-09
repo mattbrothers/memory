@@ -16,27 +16,93 @@
             height: 25vh;
             float: left;
             cursor: pointer;
-            @include transition(all, 0.2s, ease);
+            /*@include transition(all, 0.2s, ease);*/
             @include box-sizing(border-box);
 
             &:hover{
-                /*@include box-shadow(inset 0 0 20px $dark-red);*/
                 border: 1px solid $dark-red;
             }
 
-            &:active{
-                background-color: $dark-red;
-            }
-
+            &:active,
             &.selected {
                 background-color: $dark-red;
             }
         }
 
-        input[type=checkbox] {
-            &.selected {
-                background-color: $dark-red;
+        &.level2 {
+
+            .card {
+                width: 20vw;
+                height: 20vh;
+                background-color: $teal;
+
+                &:hover{
+                    border: 1px solid $dark-teal;
+                }
+
+                &:active,
+                &.selected {
+                    background-color: $dark-teal;
+                }
             }
+            
+        }
+
+        &.level3 {
+
+            .card {
+                width: 10vw;
+                height: 25vh;
+                background-color: $purple;
+
+                &:hover{
+                    border: 1px solid $dark-purple;
+                }
+
+                &:active,
+                &.selected {
+                    background-color: $dark-purple;
+                }
+            }
+            
+        }
+
+        &.level4 {
+
+            .card {
+                width: 10vw;
+                height: 20vh;
+                background-color: $navy;
+
+                &:hover{
+                    border: 1px solid $dark-navy;
+                }
+
+                &:active,
+                &.selected {
+                    background-color: $dark-navy;
+                }
+            }
+            
+        }
+
+        &.level5 {
+
+            .card {
+                width: 10vw;
+                height: 10vh;
+                background-color: $green;
+
+                &:hover{
+                    border: 1px solid $dark-green;
+                }
+
+                &:active,
+                &.selected {
+                    background-color: $dark-green;
+                }
+            }
+            
         }
     }
 
@@ -47,7 +113,7 @@
         position: absolute;
         text-align: center;
         top: 50%;
-        margin-top: -100px;
+        margin-top: -150px;
         width: 100%;
         height: 100%;
         font-size: 100px;
