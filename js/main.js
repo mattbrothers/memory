@@ -70,7 +70,7 @@ function clear() {
     // Check for then remove level classes
     // TODO: make this less clinky
     if (cards.hasClass('level2') || cards.hasClass('level3') || cards.hasClass('level4')) {
-        cards.removeClass('level2 level3 level4');
+        cards.removeClass('level2 level3 level4 level5');
         // Resets the board and removes extra card divs
         $('.card').slice(20, $('.cards > div').length).remove();
     }
