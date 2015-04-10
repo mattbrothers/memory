@@ -1,5 +1,4 @@
 // number of card divs to build
-// var totalCards = 20;
 var cards = $('.cards');
 function buildCards(e) {
     for(var i = 0; i < e; i++) {
@@ -51,7 +50,7 @@ function setup() {
         buildCards(100);
     } 
 
-    console.warn($('.cards > div').length);
+    // console.warn($('.cards > div').length);
     chosen = $(shuffle(card).slice(0, checkedCards));
     chosen.addClass('selected chosen');
     hide();
